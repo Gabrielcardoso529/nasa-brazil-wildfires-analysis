@@ -1,14 +1,14 @@
 # 🔥 Análise de Queimadas no Brasil com Dados de Satélite da NASA
 
-Projeto de Data Science desenvolvido para analisar focos de incêndio detectados por satélites da NASA no território brasileiro, utilizando Python, estatística descritiva e técnicas de análise exploratória de dados.
+Neste projeto analisei focos de calor detectados por satélites da NASA no território brasileiro usando Python, estatística descritiva e análise exploratória de dados.
 
-O objetivo foi transformar uma base com mais de 850 mil registros em informações capazes de auxiliar na compreensão da intensidade, distribuição e comportamento dos focos de incêndio.
+Trabalhei com uma base de mais de 850 mil registros para entender melhor a intensidade dos focos, a distribuição dos valores e as relações entre algumas das variáveis térmicas.
 
 ## 📌 Sobre o projeto
 
 Incêndios florestais geram impactos ambientais, sociais e econômicos, afetando biodiversidade, agricultura, saúde pública e populações próximas às regiões atingidas.
 
-Neste projeto, foram utilizados dados provenientes da plataforma NASA FIRMS/Earthdata para investigar padrões relacionados aos focos de calor registrados no Brasil.
+Usei dados da plataforma NASA FIRMS/Earthdata para investigar os focos de calor registrados no Brasil durante o período analisado.
 
 **Período analisado:** 25/05/2025 a 25/05/2026  
 **Total analisado:** 853.047 registros de focos de incêndio
@@ -94,7 +94,7 @@ Entre as variáveis analisadas, a relação mais forte apareceu entre `brightnes
 
 ## 🌎 Aplicação dos dados
 
-O projeto demonstra como dados obtidos por satélites podem contribuir para:
+Além da parte estatística, o projeto me ajudou a entender como dados de satélite podem ser usados em situações como:
 
 - Monitoramento ambiental;
 - Identificação de eventos extremos;
@@ -102,7 +102,7 @@ O projeto demonstra como dados obtidos por satélites podem contribuir para:
 - Apoio a estudos de prevenção de desastres;
 - Geração de informações para tomada de decisão.
 
-O trabalho também explora a aplicação de dados e infraestrutura espacial na análise de fenômenos terrestres.
+Foi uma forma prática de trabalhar com uma base real e de grande volume, passando pela preparação dos dados, análise estatística e comunicação dos resultados.
 
 ## ⚠️ Limitações
 
@@ -126,10 +126,10 @@ nasa-brazil-wildfires-analysis/
 
 ## 🎓 Contexto acadêmico
 
-Projeto desenvolvido por **Gabriel Cardoso** durante a graduação em **Engenharia de Software na FIAP**, aplicando conceitos de Data Science, estatística e análise exploratória de dados a um problema real.
+Desenvolvi este projeto durante a graduação em **Engenharia de Software na FIAP**, aplicando conceitos de Data Science, estatística e análise exploratória em uma base de dados real.
 
 ## 📚 Fonte dos dados
 
 Os dados utilizados foram obtidos através da plataforma **NASA FIRMS (Fire Information for Resource Management System)**.
 
-Devido ao tamanho da base original, o arquivo CSV não será armazenado diretamente neste repositório. As instruções para obtenção e utilização dos dados serão disponibilizadas na pasta `data/`.
+Devido ao tamanho da base original, o arquivo CSV não será armazenado diretamente neste repositório. As instruções para obtenção e utilização dos dados estão na pasta `data/`.
