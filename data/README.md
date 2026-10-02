@@ -14,7 +14,7 @@ A base analisada contém 853.047 registros referentes ao Brasil no período de 2
 
 1. Acesse a plataforma NASA FIRMS/Earthdata e obtenha os dados correspondentes ao recorte utilizado na análise.
 2. Salve o arquivo CSV nesta pasta com o nome `fire_archive_SV-C2_755280.csv`.
-3. Execute o notebook `notebooks/nasa_wildfires_analysis.ipynb` a partir da raiz do repositório.
+3. Abra `notebooks/nasa_wildfires_analysis.ipynb` e execute as células em sequência. O notebook procura o CSV tanto a partir da raiz do repositório quanto da pasta `notebooks/`.
 
 ## Por que o CSV não está no GitHub?
 
