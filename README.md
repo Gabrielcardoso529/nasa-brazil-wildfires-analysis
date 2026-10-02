@@ -64,21 +64,33 @@ Foi utilizado o método **IQR (Intervalo Interquartil)** para identificar valore
 
 Foram utilizados histogramas, boxplots, gráficos de barras, scatterplots e heatmap de correlação para explorar os dados e comunicar os resultados.
 
-## 💡 Principais insights
+## 📈 O que os dados mostraram
 
-A análise mostrou que a variável **FRP (Fire Radiative Power)** possui elevada dispersão.
+Uma das coisas que mais chamou minha atenção durante a análise foi a diferença entre a média do FRP (**10,86 MW**) e a mediana (**5,52 MW**). Isso acontece porque a maior parte dos registros está concentrada em valores menores, enquanto alguns focos muito intensos puxam a média para cima. O maior valor encontrado passou de **2.000 MW**.
 
-Enquanto a média encontrada foi aproximadamente **10,86**, a mediana foi **5,52**, e foram observados registros superiores a **2.000**.
+### Distribuição do FRP
 
-O coeficiente de variação do FRP foi aproximadamente **193,84%**, evidenciando grande heterogeneidade na intensidade dos focos registrados.
+![Distribuição do FRP](images/frp_distribution.svg)
 
-Também foi identificada uma relação positiva entre variáveis térmicas:
+O histograma deixa essa concentração bem visível. A maior parte dos focos está nas primeiras faixas de FRP e a frequência cai rapidamente conforme a potência aumenta.
 
-- `brightness` × `bright_t31`: correlação de aproximadamente **0,58**;
-- `brightness` × `frp`: aproximadamente **0,32**;
-- `bright_t31` × `frp`: aproximadamente **0,37**.
+### Valores extremos
 
-Esses resultados indicam associação positiva entre os indicadores térmicos analisados e a potência radiativa registrada nos focos de calor.
+![Boxplot do FRP](images/frp_boxplot.svg)
+
+Pelo critério de IQR, o limite superior ficou em aproximadamente **22,84 MW**. A partir daí aparecem muitos valores considerados outliers. Nesse caso, eles não são simplesmente "erros": são registros importantes porque representam eventos bem mais intensos que o comportamento típico da base.
+
+### Brightness × FRP
+
+![Relação entre Brightness e FRP](images/brightness_vs_frp.svg)
+
+Também quis verificar se focos com maior brilho térmico tendiam a apresentar maior potência radiativa. Na base completa, `brightness` e `frp` tiveram correlação de aproximadamente **0,32**. Existe uma relação positiva, mas ela não é forte o suficiente para tratar uma variável como explicação isolada da outra.
+
+### Correlação entre as variáveis térmicas
+
+![Heatmap de correlação](images/correlation_heatmap.svg)
+
+Entre as variáveis analisadas, a relação mais forte apareceu entre `brightness` e `bright_t31`, com correlação próxima de **0,58**. Já `bright_t31` e `frp` apresentaram aproximadamente **0,37**.
 
 ## 🌎 Aplicação dos dados
 
@@ -96,7 +108,7 @@ O trabalho também explora a aplicação de dados e infraestrutura espacial na a
 
 Os dados representam focos de calor detectados por sensores de satélite. Portanto, a análise permite identificar padrões nos registros e em seus indicadores térmicos, mas não determina diretamente a causa específica de cada incêndio.
 
-## 📁 Estrutura planejada do projeto
+## 📁 Estrutura do projeto
 
 ```text
 nasa-brazil-wildfires-analysis/
